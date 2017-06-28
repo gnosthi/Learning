@@ -7,7 +7,6 @@ func calculateThing(a int, b int) int {
 }
 
 func main() {
-
 	a := 666
 	b := "Do what thou wilt shall be the whole of the Law"
 	c := 93
