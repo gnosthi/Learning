@@ -7,7 +7,7 @@ import (
 
 func doLoop(a int) {
 	for i := 0; i < a; i++ {
-		fmt.Printf("%d \t %b \t %x \n", i, i, i)
+		fmt.Printf("%d \t %b \t %x \t %q \n", i, i, i, i)
 		time.Sleep(time.Second/3)
 	}
 }
