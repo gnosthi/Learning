@@ -16,6 +16,11 @@ func main() {
 	//Dereference mem address of a
 	fmt.Println("Print b's value using *b, this called dereferencing", *b)
 
+	//Assign new value to memory address.
+	*b = 666
+	//Print "a" which will have been updated to new value
+	fmt.Println(a)
+
 	/*
 	The above code makes b a pointer to the memory address where a resides.
 	b is of type "int pointer"
