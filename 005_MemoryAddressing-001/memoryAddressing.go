@@ -13,16 +13,21 @@ func main() {
 		fmt.Printf("Number: %d\t\t", i)
 		fmt.Printf("Binary: %b\t\t", i)
 		fmt.Printf("Hexadecimal: %x\t\t", i)
+		//grab the memory address for "i"
+		//memory address will be the same for each iteration.
 		fmt.Printf("Memory Address: %v\n", &i)
 	}
 
+	//init var which will assign a mem address to var meters.
 	var meters float64
 	fmt.Print("Enter meters swam: ")
+	//read value into memory address of "meters"
 	fmt.Scan(&meters)
 	yards := meters * metersToYards
 	fmt.Println(meters, " meters is ", yards, " yards.")
 	fmt.Printf("Number: %f\t\t", yards)
-	fmt.Printf("Binary: %b											QQQQQQW3E45\t\t", yards)
+	fmt.Printf("Binary: %b\t\t", yards)
 	fmt.Printf("Hexadecimal: %x\t\t", int(yards))
+	//Grab mem address of yards.
 	fmt.Printf("Memory Address: %v\n", &yards)
 }
