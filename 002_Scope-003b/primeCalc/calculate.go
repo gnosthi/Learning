@@ -1,20 +1,18 @@
 package primeCalc
 
-func Calculate(num int) {
-	var primeBool bool
-	for i := num; i > 0; i-- {
-		primeBool = isThreeOrLess(num)
-		if primeBool == true {
-			confirmPrime(num)
-			break
-		}
+import "os"
 
+func Calculate(num int) {
+	var primeBool bool = isThreeOrLess(num)
+	if primeBool == true {
+		confirmPrime(num)
+		os.Exit(0)
+	}
+	for i := num; i > 0; i-- {
 		if i == num {
 			i--
 		}
-
 		modNum, divNum := calculateModAndDiv(num, i)
-
 		if i > 1 && modNum == 0 {
 			confirmNotPrime(num, divNum, i)
 			break
@@ -22,6 +20,5 @@ func Calculate(num int) {
 			confirmPrime(num)
 			break
 		}
-
 	}
 }
