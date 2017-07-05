@@ -6,10 +6,10 @@ func zero(x int) {
 	x = 0
 }
 
-func zeroTest(x int) {
-	fmt.Printf("%p\n", &x) //mem address of x in func zeroTest
-	fmt.Println(&x) //address in func zeroTest
-	x = 0
+func zeroTest(z int) {
+	fmt.Printf("%p\n", &z) //mem address of x in func zeroTest
+	fmt.Println(&z) //address in func zeroTest
+	z = 0
 }
 
 func main() {
